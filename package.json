@@ -1,0 +1,88 @@
+{
+  "author": "Jayen Ashar",
+  "name": "ionic-ride-the-waverley-app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@capacitor/core": "^2.4.2",
+    "@capacitor/ios": "^2.4.2",
+    "@ionic/react": "^5.4.3",
+    "@ionic/react-router": "^5.4.3",
+    "@mapbox/mapbox-gl-geocoder": "^4.7.0",
+    "@mapbox/polyline": "^1.1.1",
+    "@sentry/react": "^5.27.3",
+    "geodesy": "^2.2.1",
+    "ionicons": "^5.2.3",
+    "jetifier": "^1.6.6",
+    "mapbox-gl": "^1.12.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.31",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.0",
+    "reselect": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "analyse": "react-scripts build && source-map-explorer 'build/static/js/*.js'",
+    "find-duplicates": "jscpd src --min-tokens 50 --min-lines 5 --reporters consoleFull"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "description": "The transport app for the Waverley Council area",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.10",
+    "@capacitor/android": "^2.4.2",
+    "@capacitor/cli": "^2.4.2",
+    "@ionic/cli": "^6.12.1",
+    "@testing-library/react": "^11.1.1",
+    "@types/geodesy": "^2.2.2",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.12.6",
+    "@types/react": "^16.9.56",
+    "@types/react-dom": "^16.9.9",
+    "@types/react-router": "^5.1.8",
+    "@types/react-router-dom": "^5.1.6",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.23.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.0",
+    "jscpd": "^3.3.25",
+    "lint-staged": "^10.5.1",
+    "mapshaper": "^0.5.26",
+    "pngjs": "^6.0.0",
+    "source-map-explorer": "^2.5.2",
+    "typescript": "~3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --config eslintrc-that-CRA4-wont-find.json --fix"
+  }
+}

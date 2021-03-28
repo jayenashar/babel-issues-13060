@@ -1,0 +1,58 @@
+{
+  "extends": "react-app",
+  "rules": {
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "CallExpression": {
+          "arguments": "first"
+        },
+        "MemberExpression": "off",
+        "flatTernaryExpressions": true,
+        "ignoredNodes": [
+          "JSXElement *"
+        ]
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "never"
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      "first"
+    ],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "beforeSelfClosing": "never",
+        "beforeClosing": "never"
+      }
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "caseSensitive": false,
+        "natural": true
+      }
+    ],
+    "sort-vars": "error"
+  }
+}
